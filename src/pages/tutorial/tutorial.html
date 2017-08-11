@@ -1,0 +1,40 @@
+<!--
+  Generated template for the Tutorial page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Tutorial</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-segment>
+      <ion-segment-button value="man">
+        <ion-icon name="man">Man</ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="vrouw">
+        <ion-icon name="woman">Vrouw</ion-icon>
+      </ion-segment-button>
+    </ion-segment>
+   <img src="assets/img/swimmer.png"> 
+    <ion-item class="data-input">
+    	<ion-input placeholder="ARMLENGTE"></ion-input>
+    </ion-item>
+    <ion-item class="data-input">
+    	<ion-input placeholder="BEENLENGTE"></ion-input>
+    </ion-item>
+    <ion-item class="data-input">
+    	<ion-input placeholder="GEBOORTEDATUM"></ion-input>
+    </ion-item>
+    <ion-item class="data-input">
+    	<ion-input placeholder="GEWICHT"></ion-input>
+    </ion-item>
+    <ion-item class="data-input">
+    	<ion-input placeholder="VETPERCENTAGE"></ion-input>
+    </ion-item>
+    <button ion-button (click)="nextPage();">Ik doe dit later</button>
+    <button ion-button class="button-orange" (click)="nextPage();">Ga Verder</button>
+</ion-content>

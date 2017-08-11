@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ranking
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+ <ion-list>
+ 	<ion-item>
+ 	 	<ion-label>Toon alle zwemmers</ion-label>
+	    <ion-toggle  ng-model="settings.enableFriends"></ion-toggle>
+    </ion-item>
+	<ion-item class="rank-item" (click)="nextPage();">
+		<ion-thumbnail item-start>
+		<img src="assets/img/ppl/davinje.png">
+		</ion-thumbnail>
+		<div class="flag"></div>
+		<h2 class="prestatie-naam">1- 00:04:33</h2>
+		<p class="prestatie-rank">DAVINJE DE JONG</p>
+	</ion-item>
+    <ion-item class="rank-item">
+	    <ion-thumbnail item-start>
+		<img src="assets/img/ppl/davinje.png">
+	    </ion-thumbnail>
+	    <div class="flag"></div>
+	    <h2 class="prestatie-naam">2- 00:04:31</h2>
+	    <p class="prestatie-rank">FRANK LOPER</p>
+  	</ion-item>
+   	<ion-item class="rank-item">
+	    <ion-thumbnail item-start>
+		<img src="assets/img/ppl/davinje.png">
+	    </ion-thumbnail>
+	    <div class="flag"></div>
+	    <h2 class="prestatie-naam">3- 00:03:51</h2>
+	    <p class="prestatie-rank">FRANCESCA HILLER</p>
+  	</ion-item>
+</ion-list>
+<button ion-button class="button-blue-long">Rank Delen op Facebook</button>
+<button ion-button class="button-blue-long">Rank Delen op Twitter</button>
+<button ion-button class="button-blue-long">Rank Delen op Instagram</button>
+
+</ion-content>

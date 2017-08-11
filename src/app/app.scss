@@ -1,0 +1,338 @@
+// http://ionicframework.com/docs/v2/theming/
+.fixed-content
+{	
+	content:url("../assets/img/bg.png");
+	width:100%;
+	height:100%;
+}
+
+.scroll-content
+{
+	background:rgba(255, 255, 255, 0.4);
+}
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+.tabs-wp .tab-button
+{
+	color:blue;
+}
+
+.tabs-wp .tab-button[aria-selected=true]
+{
+	color:red;
+}
+
+// --------------------------------------------------ANDROID
+
+.item-md
+{
+	background:rgba(255, 255, 255, 0);
+}
+
+.list-md .item-block .item-inner
+{
+	border-bottom:1px solid lightgrey;
+}
+
+.item-md h2
+{
+	text-overflow:ellipsis;
+	overflow:hidden;
+}
+
+.toolbar-background-md
+{
+	background-color: rgba(51, 102, 255, 0.5);
+}
+
+.md .toolbar-md
+{
+	background:none;
+}
+
+.md .toolbar-title-md
+{
+	text-align:center;
+	color:#20373c;
+}
+
+.tabs-md .tabbar
+{
+	background-color: rgba(51, 102, 255, 0.1);
+}
+
+.md .tabs-md .tab-button
+{
+	background-color: rgba(51, 102, 255, 0.1);
+}
+
+.md .tabs-md .tab-button[aria-selected=true]
+{
+	background-color: rgba(51, 102, 255, 0.4);
+	color:white;
+}
+
+.md .tabs-md .tab-button .tab-button-icon
+{
+	height:27px;
+}
+
+.bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default
+{
+	color:#20373c;
+}
+
+.ion-md-icon-friends, .ion-md-icon-friends-outline, .ion-md-icon-friends 
+{
+  content:url("../assets/img/icon-friends-off.png");
+}
+
+.tabs-md .tab-button[aria-selected=true] 
+{
+	.ion-ios-icon-friends, .ion-ios-icon-friends-outline, .ion-md-icon-friends 
+	{
+	  content:url("../assets/img/icon-friends-on.png");
+	} 
+}
+
+.ion-md-icon-profile, .ion-md-icon-profile-outline, .ion-md-icon-profile 
+{
+  content:url("../assets/img/icon-profile-off.png");
+}
+
+.tabs-md .tab-button[aria-selected=true] 
+{
+	.ion-ios-icon-profile, .ion-ios-icon-profile-outline, .ion-md-icon-profile 
+	{
+	  content:url("../assets/img/icon-profile-on.png");
+	} 
+}
+
+.ion-md-icon-ranking, .ion-md-icon-ranking-outline, .ion-md-icon-heat 
+{
+  content:url("../assets/img/icon-ranking-off.png");
+}
+
+.tabs-md .tab-button[aria-selected=true] 
+{
+	.ion-md-icon-ranking, .ion-md-icon-ranking-outline, .ion-md-icon-ranking 
+	{
+	  content:url("../assets/img/icon-ranking-on.png");
+	}
+}
+
+.ion-md-icon-heat, .ion-md-icon-heat-outline, .ion-md-icon-heat 
+{
+  content:url("../assets/img/icon-heat-off.png");
+}
+
+.tabs-md .tab-button[aria-selected=true] 
+{
+	.ion-md-icon-heat, .ion-md-icon-heat-outline, .ion-md-icon-heat 
+	{
+	  content:url("../assets/img/icon-heat-on.png");
+	}
+}
+
+.md .item-md ion-avatar[item-left], .item-md ion-thumbnail[item-left], .item-md ion-avatar[item-start], .item-md ion-thumbnail[item-start]
+{
+	margin:0;
+}
+
+.segment-md .segment-button ion-icon
+{
+	font-size:16pt;
+}
+
+.segment-md .segment-button.activated, .segment-md .segment-button.segment-activated
+{
+	border-color:#ffa32b;
+}
+
+.md .button-clear-md
+{
+	color:#20373c;
+}
+
+// --------------------------------------------------IOS
+
+.toolbar-title-ios
+{
+	color:#20373c;
+	font-weight:500;
+}
+
+
+.ios .toolbar-background-ios
+{
+	background-color: rgba(51, 102, 255, 0.4);
+}
+
+.item-ios
+{
+	background:rgba(255, 255, 255, 0);
+}
+
+.item-ios h2
+{
+	text-overflow:ellipsis;
+	overflow:hidden;
+}
+
+.ios .tabs-ios .tab-button
+{
+	background-color: rgba(51, 102, 255, 0.4);
+}
+
+.ios .tabs-ios .tab-button[aria-selected=true]
+{
+	background-color: rgba(51, 102, 255, 0.7);
+	color:white;
+}
+
+.ios .tabs-ios .tab-button .tab-button-icon
+{
+	min-width:25px;
+}
+
+.bar-button-default-ios, .bar-button-default.bar-button-ios-default, .bar-button-clear-ios-default
+{
+	color:#20373c;
+}
+
+.ion-ios-icon-friends, .ion-ios-icon-friends-outline, .ion-ios-icon-friends
+{
+ 	content:url("../assets/img/icon-friends-off.png");
+}
+
+.tabs-ios .tab-button[aria-selected=true] 
+{
+	.ion-ios-icon-friends, .ion-ios-icon-friends-outline, .ion-ios-icon-friends w
+	{
+	 	content:url("../assets/img/icon-friends-on.png");
+	} 
+}
+
+.ion-ios-icon-heat, .ion-ios-icon-heat-outline, .ion-ios-icon-heat
+{
+ 	content:url("../assets/img/icon-heat-off.png");
+}
+
+.tabs-ios .tab-button[aria-selected=true] 
+{
+	.ion-ios-icon-heat, .ion-ios-icon-heat-outline, .ion-ios-icon-heat 
+	{
+		 content:url("../assets/img/icon-heat-on.png");
+	} 
+}
+
+.ion-ios-icon-profile, .ion-ios-icon-profile-outline, .ion-ios-icon-profile
+{
+ 	content:url("../assets/img/icon-profile-off.png");
+}
+
+.tabs-ios .tab-button[aria-selected=true] 
+{
+	.ion-ios-icon-profile, .ion-ios-icon-profile-outline, .ion-ios-icon-profile
+	{
+	 	content:url("../assets/img/icon-profile-on.png");
+	} 
+}
+
+.ion-ios-icon-ranking, .ion-ios-icon-ranking-outline, .ion-ios-icon-ranking
+{
+ 	content:url("../assets/img/icon-ranking-off.png");
+}
+
+.tabs-ios .tab-button[aria-selected=true] 
+{
+	.ion-ios-icon-ranking, .ion-ios-icon-ranking-outline, .ion-ios-icon-ranking 
+	{
+		 content:url("../assets/img/icon-ranking-on.png");
+	} 
+}
+
+.segment-ios .segment-button
+{
+	border-color:#20373c;
+	height:30px;
+}
+
+.segment-ios .segment-button ion-icon
+{
+	font-size:14pt;
+}
+
+.segment-ios .segment-button.segment-activated
+{
+	background-color:#ffa32b;
+}
+
+.ios .button-clear-ios
+{
+	color:#20373c;
+}
+
+// --------------------------------------------------CUSTOM BUTTONS
+
+.button-blue-long
+{
+	background-color:#20373c;
+	color:white;
+	display:block;
+	margin: auto;
+	width:70%;
+	margin-bottom:15px;
+}
+
+.button-orange-long
+{
+	background-color:#ffa32b;
+	color:#20373c;
+	position:absolute;
+	left:5px;
+	bottom:10px;
+	width:95%;
+}
+
+.button-blue
+{
+	background-color:#20373c;
+	color:white;
+	float:left;
+	font-size:10pt;
+}
+
+.button-orange
+{
+	background-color:#ffa32b;
+	float:right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
